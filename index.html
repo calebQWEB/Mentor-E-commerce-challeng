@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="#mobile"> <img src="/assets/images/navigation/icon-menu.svg" alt="" class="show-menu"></a>
+                <img src=" assets/images/logo/logo.svg" alt="Company logo">
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="customer">
+                <div class="price-tag"></div>
+                <a href="#yourPurchase"><img src="/assets/images/items/icon-cart.svg" alt="picture of a cart"
+                        class="cart-icon"></a>
+                <img src="/assets/images/avatar/image-avatar.png" alt="picture of the customer" class="avatar">
+            </div>
+        </nav>
+
+        <div class="hr"></div>
+
+        <!-- THE POPUP MENU -->
+        <div class="your-purchase" id="yourPurchase">
+            <div class="header-flex">
+                <p class="header">Cart</p>
+                <a href="#!"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <hr class="popup-line">
+            <div class="popup-flex">
+                <div class="popup-image"><img src="/assets/images/thumbnails/image-product-1-thumbnail.jpg" alt=""
+                        class="chosen-image"></div>
+
+                <p class="popup-text">Fall Limited Edition Sneakers $125</p>
+
+                <a href="index.html"><img src="assets/images/items/icon-delete.svg" alt="delete-icon"
+                        class="delete-icon"></a>
+            </div>
+
+            <div class="popup-flex2">
+                <p class="pro-price"></p>
+                <p class="the-price" style="display: none;">125</p>
+                <p class="multiplication">X</p>
+                <p class="pro-number"></p>
+                <p class="total-price"></p>
+            </div>
+            <button class="popup-button">Checkout</button>
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- MOBILE-NAVIGATION -->
+        <ul class="mobile-nav" id="mobile">
+            <a href="#!"><i class="fa-solid fa-xmark" class="close-nav"></i></a>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <picture class="picture-1">
+            <img src="/assets/images/product/image-product-1.jpg" alt="product-1" class="product-1">
+
+            <div class="thumbnails">
+                <a href="#product-1" class="thumbnail"><img
+                        src="/assets/images/thumbnails/image-product-1-thumbnail.jpg" alt="" class="chosen-image">
+                    <p class="product-text" style="display: none;">Fall Limited Edition Sneakers $125</p>
+                    <p style="display: none;" class="the-price">125</p>
+                </a>
+
+                <a href="#product-2" class="thumbnail"><img
+                        src="/assets/images/thumbnails/image-product-2-thumbnail.jpg" alt="" class="chosen-image">
+                    <p class="product-text" style="display: none;">Fall Limited Edition Sneakers $132</p>
+                    <p style="display: none;" class="the-price">132</p>
+                </a>
+
+                <a href="#product-3" class="thumbnail"><img
+                        src="/assets/images/thumbnails/image-product-3-thumbnail.jpg" alt="" class="chosen-image">
+                    <p class="product-text" style="display: none;">Fall Limited Edition Sneakers third image $115</p>
+                    <p style="display: none;" class="the-price">115</p>
+                </a>
+
+                <a href="#product-4" class="thumbnail"><img
+                        src="/assets/images/thumbnails/image-product-4-thumbnail.jpg" alt="" class="chosen-image">
+                    <p class="product-text" style="display: none;">Fall Limited Edition Sneakers $130</p>
+                    <p style="display: none;" class="the-price">130</p>
+                </a>
+            </div>
+
+
+            <!-- ALL THE LIGHTBOXES -->
+            <div class="lightboxes">
+
+                <!-- LIGHTBOX -->
+                <div class="lightbox" id="product-1">
+                    <div class="box-content">
+                        <img src="assets/images/product/image-product-1.jpg" alt="">
+                        <a href="#!" class="close"><i class="fa-solid fa-xmark"></i></a>
+                        <a href="#product-2" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="lightbox" id="product-2">
+                    <div class="box-content">
+                        <img src="assets/images/product/image-product-2.jpg" alt="">
+                        <a href="#!" class="close"><i class="fa-solid fa-xmark"></i></a>
+                        <a href="#product-3" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="lightbox" id="product-3">
+                    <div class="box-content">
+                        <img src="assets/images/product/image-product-3.jpg" alt="">
+                        <a href="#!" class="close"><i class="fa-solid fa-xmark"></i></a>
+                        <a href="#product-4" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="lightbox" id="product-4">
+                    <div class="box-content">
+                        <img src="assets/images/product/image-product-4.jpg" alt="">
+                        <a href="#!" class="close"><i class="fa-solid fa-xmark"></i></a>
+                        <a href="#product-1" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </picture>
+
+
+
+        <!-- MOBILE SECTION LIGHT BOX -->
+        <picture class="picture-2">
+            <div class="carousel-container">
+                <i class="fa-solid fa-chevron-left" id="prevBtn"></i>
+                <i class="fa-solid fa-chevron-right" id="nextBtn"></i>
+                <div class="carousel-slide">
+                    <img src="/assets/images/product/image-product-4.jpg" alt="" class="slider-image" id="lastClone">
+                    <img src="/assets/images/product/image-product-1.jpg" alt="" class="slider-image">
+                    <img src="/assets/images/product/image-product-2.jpg" alt="" class="slider-image">
+                    <img src="/assets/images/product/image-product-3.jpg" alt="" class="slider-image">
+                    <img src="/assets/images/product/image-product-4.jpg" alt="" class="slider-image">
+                    <img src="/assets/images/product/image-product-1.jpg" alt="" class="slider-image" id="firstClone">
+                </div>
+            </div>
+        </picture>
+
+        <article>
+
+            <p class="company">SNEAKER COMPANY</p>
+            <h1>Fall Limited Edition<br> Sneakers</h1>
+            <p class="about-product">
+                These low-profile sneakers are your perfect casual wear companion Featuring a durable rubber outer
+                sole. They'll withstand everthing the weather can offer.
+            </p>
+
+
+            <div class="mobile-flex">
+                <div class="rate">
+                    <p class="price">$125.00</p>
+
+                    <div class="discount-background">
+                        <p class="discount">50%</p>
+                    </div>
+                </div>
+
+
+                <p class="new-price">
+                    $250.00
+                </p>
+            </div>
+
+            <div class="button-section">
+                <button class="quantity">
+                    <img src="/assets/images/items/icon-minus.svg" alt="minus" class="minus">
+
+                    <p class="item-number">0</p>
+
+                    <img src="/assets/images/items/icon-plus.svg" alt="plus" class="plus">
+                </button>
+
+                <button class="adding"><img src="/assets/images/items/icon-cart.svg" alt="cart" class="cart">
+                    Add to cart
+                </button>
+            </div>
+        </article>
+    </main>
+
+
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
